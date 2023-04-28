@@ -6,4 +6,7 @@ def create_app():
 
     app.config.from_pyfile("../instance/config.py")
 
+    from .paraphrase import paraphrase_bp
+    app.register_blueprint(paraphrase_bp)
+
     return app
