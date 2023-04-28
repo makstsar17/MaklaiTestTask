@@ -94,7 +94,7 @@ def paraphrase_NP():
     # Create Parse tree
     try:
         ptree = ParentedTree.fromstring(tree_str)
-        print(ptree.pretty_print())
+        # print(ptree.pretty_print())
     except ValueError:
         return jsonify(error='Invalid tree description'), 400
 
